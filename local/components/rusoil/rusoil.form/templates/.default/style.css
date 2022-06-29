@@ -1,0 +1,84 @@
+.float-page{
+    margin: 30px 0 0;
+}
+
+.form-heading{
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.form-label{
+    font-size: 14px;
+}
+
+.form-cell-inputs{
+    display: flex;
+    gap: 5px;
+}
+
+.red-label{
+    font-size: 14px;
+    color: #dd0e0e;
+    font-weight: bold;
+    display: block;
+    width: min-content;
+    margin: 0px auto 5px;
+}
+
+.form-textarea{
+    width: 500px;
+    height: 100px;
+}
+
+.form-cell{
+    margin: 20px 0;
+}
+
+.form-cell .form-cell-inputs{
+    display: flex;
+    margin: 0 6px;
+}
+
+.form-cell select,
+.form-cell .float-text{
+    padding: 6px;
+}
+
+.form-cell-control{
+    display: flex;
+    gap: 25px;
+    height: 25px;
+    margin-top: 27px;
+    margin-left: 23px;
+}
+
+.form-cell-button{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #54cae2;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.form-input-line{
+    display: inline-block;
+}
+
+.form-cell-app{
+    display: flex;
+}
+
