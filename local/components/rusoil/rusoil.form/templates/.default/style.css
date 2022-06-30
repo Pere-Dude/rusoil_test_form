@@ -1,5 +1,6 @@
 .float-page{
     margin: 30px 0 0;
+    padding: 30px;
 }
 
 .form-heading{
@@ -82,3 +83,29 @@
     display: flex;
 }
 
+
+@media (max-width: 800px) {
+    .float-page{
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .float-page{
+        padding: 30px;
+        width: 375px;
+    }
+    .form-textarea{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .float-page{
+        padding: 15px;
+        width: 290px;
+    }
+    .form-textarea{
+        width: 280px;
+    }
+}
