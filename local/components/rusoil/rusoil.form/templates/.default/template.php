@@ -73,7 +73,7 @@ Loc::loadMessages(__FILE__);
                 </div>
                 <div class="form-input hidden">
                     <label class="red-label"><?= Loc::getMessage('AMOUNT') ?></label>
-                    <input type="text" name="amount" class="float-text">
+                    <input type="number" name="amount" class="float-text">
                 </div>
                 <div class="form-input hidden">
                     <label class="red-label"><?= Loc::getMessage('PACKING') ?></label>
