@@ -41,8 +41,8 @@
     margin: 0 6px;
 }
 
-.form-cell select,
-.form-cell .float-text{
+select,
+.float-text{
     padding: 6px;
 }
 
@@ -50,7 +50,7 @@
     display: flex;
     gap: 25px;
     height: 25px;
-    margin-top: 27px;
+    margin-top: 33px;
     margin-left: 23px;
 }
 

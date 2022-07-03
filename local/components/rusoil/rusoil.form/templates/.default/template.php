@@ -56,37 +56,31 @@ Loc::loadMessages(__FILE__);
 
         <span class="form-heading"><?= Loc::getMessage('APP_COMPOUND') ?></span>
         <div class="form-cell form-cell-app">
-            <div class="form-input form-input-line">
-                <label class="red-label"><?= Loc::getMessage('BRAND') ?></label>
-                <select name="brand">
-                    <option value="Нет"><?= Loc::getMessage('CHOOSE_BRAND') ?></option>
-                    <?php
-                    foreach ($arResult['BRANDS'] as $arKey => $arItem): ?>
-                        <option value="<?= $arItem ?>"><?= $arItem ?></option>
-                    <?php endforeach; ?>
-                </select>
-            </div>
-            <div class="form-cell form-cell-inputs">
-                <div class="form-input hidden">
-                    <label class="red-label"><?= Loc::getMessage('NAME') ?></label>
-                    <input type="text" name="name" class="float-text">
-                </div>
-                <div class="form-input hidden">
-                    <label class="red-label"><?= Loc::getMessage('AMOUNT') ?></label>
-                    <input type="number" name="amount" class="float-text">
-                </div>
-                <div class="form-input hidden">
-                    <label class="red-label"><?= Loc::getMessage('PACKING') ?></label>
-                    <input type="text" name="packing" class="float-text">
-                </div>
-                <div class="form-input hidden">
-                    <label class="red-label"><?= Loc::getMessage('CLIENT') ?></label>
-                    <input type="text" name="client" class="float-text">
-                </div>
-                <div class="form-cell-control">
-                    <span class="form-cell-button plus">+</span>
-                    <span class="form-cell-button minus">-</span>
-                </div>
+            <table class="form-table">
+                <tr>
+                    <td><label class="red-label"><?= Loc::getMessage('BRAND') ?></label></td>
+                    <td><label class="red-label"><?= Loc::getMessage('NAME') ?></label></td>
+                    <td><label class="red-label"><?= Loc::getMessage('AMOUNT') ?></label></td>
+                    <td><label class="red-label"><?= Loc::getMessage('PACKING') ?></label></td>
+                    <td><label class="red-label"><?= Loc::getMessage('CLIENT') ?></label></td>
+                </tr>
+                <tr class="table-line">
+                    <td><select name="brand1" class="brand">
+                            <option value="Нет"><?= Loc::getMessage('CHOOSE_BRAND') ?></option>
+                            <?php
+                            foreach ($arResult['BRANDS'] as $arKey => $arItem): ?>
+                                <option value="<?= $arItem ?>"><?= $arItem ?></option>
+                            <?php endforeach; ?>
+                        </select></td>
+                    <td><input type="text" name="name1" class="float-text name"></td>
+                    <td><input type="number" name="amount1" min="1" class="float-text amount"></td>
+                    <td><input type="text" name="packing1" class="float-text packing"></td>
+                    <td><input type="text" name="client1" class="float-text client"></td>
+                </tr>
+            </table>
+            <div class="form-cell-control">
+                <span class="form-cell-button plus">+</span>
+                <span class="form-cell-button minus">-</span>
             </div>
         </div>
 
